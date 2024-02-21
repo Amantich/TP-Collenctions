@@ -3,7 +3,6 @@ package org.exercice2;
 import java.util.HashMap;
 
 public class HashNote {
-
     public static void main(String[] args) {
         HashMap<String,Double> noteEtudiants=new HashMap<>();
         //ajouter note etudiant
@@ -23,11 +22,9 @@ public class HashNote {
         //afficher la taille
         System.out.println(noteEtudiants.size());
         noteEtudiants.forEach((key, value) -> System.out.println(key + " :: " + value));
-
         System.out.println("");
         //afficher note moyen max et min
         double min=20, max=0 , avg=0;
-
         noteEtudiants.forEach((key, value) -> System.out.println(key + " :: " + value));
         for (Double note:noteEtudiants.values()
              ) {
